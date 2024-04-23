@@ -13,3 +13,4 @@ openai==1.23.2
 anthropic==0.25.6
 chromadb == 0.3.29
 gunicorn
+pysqlite3-binary

@@ -7,6 +7,10 @@ from langchain_openai import OpenAIEmbeddings
 from langchain.prompts import ChatPromptTemplate
 
 from GPTModels.LLMFactory import LLMFactory
+import sys
+
+__import__('pysqlite3')
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 load_dotenv()
 app = Flask(__name__)
