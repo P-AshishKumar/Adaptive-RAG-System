@@ -91,5 +91,3 @@ def generate_RAG_response(question, context, model):
     return model.generate_response(prompt)
 
 
-if __name__ == "__main__" :
-    app.run(debug=True)
